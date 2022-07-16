@@ -1,5 +1,5 @@
 
-const mongoose= require("../connection");
+const mongoose= require("./connection");
 
 const schema = new mongoose.Schema({
     username:String,
