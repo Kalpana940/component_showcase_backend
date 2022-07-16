@@ -1,8 +1,8 @@
-const { stringify } = require("nodemon/lib/utils");
+
 const mongoose= require("../connection");
 
 const schema = new mongoose.Schema({
-    username:stringify,
+    username:String,
     email: String,
     contact: String,
     age:Number,

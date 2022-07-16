@@ -4,7 +4,6 @@ const app = express();
 
 // importing the userRouter
 const userRouter = require("./routers/userRouter");
-const productRouter = require("./routers/productRouter");
 const cors = require("cors");
 
 // middleware to convert client json data to
@@ -12,7 +11,6 @@ app.use(express.json());
 app.use(cors({ origin: ["http://localhost:3000"] }));
 
 app.use("/user", userRouter);
-app.use("/product", productRouter);
 
 app.get("/add", (req, res) => {
   res.send("request at index");
